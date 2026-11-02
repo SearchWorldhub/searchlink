@@ -1,0 +1,14 @@
+{
+  "name": "searchlink-pwa",
+  "version": "6.0.0",
+  "private": true,
+  "description": "SearchLink 6.0 adds a local commission ledger with statuses and CSV export.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "health": "node -e \"fetch('http://127.0.0.1:'+(process.env.PORT||8787)+'/api/v1/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
